@@ -67,3 +67,4 @@ while (T){
   counter <- counter + 1
 }
 
+#Assignment : IMPLEMENT SAME CODE BLOCK USING FOR LOOP

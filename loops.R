@@ -22,7 +22,13 @@ for (i in length(X):1){
 
 #Nested For Loops
 var1 = list("Hello","Good Bye!")
-var2 = list("Bangalore")
+var2 = list("Bangalore", "Delhi")
+
+for (i in 1:length(var1)){
+  for (j in 1:length(var2)){
+    print(paste(var1[i],var2[j]))
+  }
+} 
 
 # While Loops 
 counter <- 0
@@ -67,4 +73,6 @@ while (T){
   counter <- counter + 1
 }
 
-#Assignment : IMPLEMENT SAME CODE BLOCK USING FOR LOOP
+#Assignment 
+#1. IMPLEMENT SAME CODE BLOCK USING FOR LOOP
+#2. IMPLEMENT NEXT AND BREAK INTO FOR LOOPS USING WHILE CODE BLOCKS AS REFERENCE

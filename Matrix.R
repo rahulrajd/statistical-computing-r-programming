@@ -124,8 +124,19 @@ unique(data[,"Species"])
 length(unique(data[,"Species"]))
 
 #Table function can be used to create a categorical representation of the data with oits variable name
+data
 table(data[,"Species"])
+barplot(table(data[,"Species"]))
 
+#shuffle the rows inside the data for variability
+random_indexes_matrix <- sample(nrow(data))
+new_data <- data[random_indexes_matrix,]
+
+new_data
+#select the top 50 rows and plot the distrubution of Species column
+
+table(new_data[1:50,"Species"])
+barplot(table(new_data[1:50,"Species"]))
 #Selecting rows and columns within datasets
 data
 
@@ -136,6 +147,7 @@ y <- data[,"Species"]
 
 x
 y
+
 #-----------------------------------------------------------------------------
 #NEXT Lecture 
 #Plotting 
